@@ -11,7 +11,13 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        //NSLog(@"Hello, World!");
+        
+        int count = 10;//100
+        NSLog(@"The numbers from 1 to %d:", count);
+        for (int i = 1; i <= count; i++) {
+            NSLog(@"%d", i);
+        }
     }
     return 0;
 }
