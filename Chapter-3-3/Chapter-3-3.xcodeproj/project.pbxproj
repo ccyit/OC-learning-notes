@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		423F1B67236C454600FDF756 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 423F1B66236C454600FDF756 /* main.m */; };
-		423F1B6F236C473A00FDF756 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 423F1B6E236C473A00FDF756 /* Circle.m */; };
-		423F1B73236C48E800FDF756 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 423F1B72236C48E800FDF756 /* Rectangle.m */; };
-		423F1B76236C48F800FDF756 /* Egg.m in Sources */ = {isa = PBXBuildFile; fileRef = 423F1B75236C48F800FDF756 /* Egg.m */; };
-		423F1B79236C490300FDF756 /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 423F1B78236C490300FDF756 /* Triangle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,15 +25,6 @@
 /* Begin PBXFileReference section */
 		423F1B63236C454600FDF756 /* Chapter-3-3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter-3-3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		423F1B66236C454600FDF756 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		423F1B6D236C473A00FDF756 /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
-		423F1B6E236C473A00FDF756 /* Circle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
-		423F1B70236C478E00FDF756 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
-		423F1B71236C48E800FDF756 /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
-		423F1B72236C48E800FDF756 /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
-		423F1B74236C48F800FDF756 /* Egg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Egg.h; sourceTree = "<group>"; };
-		423F1B75236C48F800FDF756 /* Egg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Egg.m; sourceTree = "<group>"; };
-		423F1B77236C490300FDF756 /* Triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
-		423F1B78236C490300FDF756 /* Triangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Triangle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				423F1B66236C454600FDF756 /* main.m */,
-				423F1B70236C478E00FDF756 /* Header.h */,
-				423F1B6D236C473A00FDF756 /* Circle.h */,
-				423F1B6E236C473A00FDF756 /* Circle.m */,
-				423F1B71236C48E800FDF756 /* Rectangle.h */,
-				423F1B72236C48E800FDF756 /* Rectangle.m */,
-				423F1B74236C48F800FDF756 /* Egg.h */,
-				423F1B75236C48F800FDF756 /* Egg.m */,
-				423F1B77236C490300FDF756 /* Triangle.h */,
-				423F1B78236C490300FDF756 /* Triangle.m */,
 			);
 			path = "Chapter-3-3";
 			sourceTree = "<group>";
@@ -141,11 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				423F1B79236C490300FDF756 /* Triangle.m in Sources */,
 				423F1B67236C454600FDF756 /* main.m in Sources */,
-				423F1B6F236C473A00FDF756 /* Circle.m in Sources */,
-				423F1B73236C48E800FDF756 /* Rectangle.m in Sources */,
-				423F1B76236C48F800FDF756 /* Egg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +238,7 @@
 		423F1B6B236C454600FDF756 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q66E2DEFC;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -274,6 +249,7 @@
 		423F1B6C236C454600FDF756 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q66E2DEFC;
 				ENABLE_HARDENED_RUNTIME = YES;
