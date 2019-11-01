@@ -23,13 +23,6 @@ typedef struct{
     int x, y, width, height;
 } ShapeRect;
 
-//Shape
-typedef struct{
-    ShapeType type;
-    ShapeColor fillColor;
-    ShapeRect bounds;
-} Shape;
-
 //colorName
 NSString *colorName(ShapeColor colorName){
     switch (colorName) {
@@ -47,128 +40,104 @@ NSString *colorName(ShapeColor colorName){
             break;
     }
 }
-void drawShapes(id shapes[], int count);
 
-
-//Circle
-@interface Circle : NSObject
+//Shape
+@interface Shape : NSObject
 {
-    @private
     ShapeColor fillColor;
     ShapeRect bounds;
 }
-
 - (void)setFillColor:(ShapeColor)fillColor;
 - (void)setBounds:(ShapeRect)bounds;
 - (void)draw;
-
 @end
 
-
-//Circle
-@implementation Circle
-
+@implementation Shape
 - (void)setFillColor:(ShapeColor)c{
     fillColor = c;
 }
-
 - (void)setBounds:(ShapeRect)b{
     bounds = b;
+}
+- (void)draw{}
+@end
+//Shape
+
+//Circle
+@interface Circle : Shape
+@end
+
+@implementation Circle
+- (void)setFillColor:(ShapeColor)c{
+    if (c == kRedColor) {
+        c = kGreenColor;
+    }
+    [super setFillColor:c];
 }
 
 - (void)draw{
     NSLog(@"Draw a circle at (%d %d %d %d) in %@.", bounds.x, bounds.y, bounds.width, bounds.height, colorName(fillColor));
 }
-
 @end
+//Circle
 
 
 //Rectangle
-@interface Rectangle : NSObject
-{
-    @private
-    ShapeColor fillColor;
-    ShapeRect bounds;
-}
-
-- (void)setFillColor:(ShapeColor)fillColor;
-- (void)setBounds:(ShapeRect)bounds;
-- (void)draw;
+@interface Rectangle : Shape
 @end
 
-
-//Rectangle
 @implementation Rectangle
-- (void)setFillColor:(ShapeColor)c{
-    fillColor = c;
-}
-
-- (void)setBounds:(ShapeRect)b{
-    bounds = b;
-}
-
 - (void)draw{
     NSLog(@"Draw a reatangle at (%d %d %d %d) in %@.", bounds.x, bounds.y, bounds.width, bounds.height, colorName(fillColor));
 }
 @end
+//Rectangle
 
 //Egg
-@interface Egg : NSObject
-{
-    @private
-    ShapeColor fillColor;
-    ShapeRect bounds;
-}
-
-- (void)setFillColor:(ShapeColor)fillColor;
-- (void)setBounds:(ShapeRect)bounds;
-- (void)draw;
+@interface Egg : Shape
 @end
 
-//Egg
 @implementation Egg
-- (void)setFillColor:(ShapeColor)c{
-    fillColor = c;
-}
-
-- (void)setBounds:(ShapeRect)b{
-    bounds = b;
-}
-
 - (void)draw{
     NSLog(@"Draw an egg at (%d %d %d %d) in %@.", bounds.x, bounds.y, bounds.width, bounds.height, colorName(fillColor));
 }
 @end
+//Egg
 
 //Triangle
-@interface Triangle : NSObject
-{
-    @private
-    ShapeColor fillColor;
-    ShapeRect bounds;
-}
-
-- (void)setFillColor:(ShapeColor)fillColor;
-- (void)setBounds:(ShapeRect)bounds;
-- (void)draw;
+@interface Triangle : Shape
 @end
 
-//Tringle
 @implementation Triangle
-
-- (void)setFillColor:(ShapeColor)c{
-    fillColor = c;
-}
-
-- (void)setBounds:(ShapeRect)b{
-    bounds = b;
-}
-
 - (void)draw{
     NSLog(@"Draw a triangle at (%d %d %d %d) in %@.", bounds.x, bounds.y, bounds.width, bounds.height, colorName(fillColor));
 }
-
 @end
+//Tringle
+
+
+//RoundedRectangle
+@interface RoundedRectangle: Shape
+{
+    @private
+    int radius;
+}
+
+- (void)setRadius:(int)a;
+@end
+
+@implementation RoundedRectangle
+
+- (void)setRadius:(int)a{
+    radius = a;
+}
+
+- (void)draw{
+    NSLog(@"Draw a roundedrectangle at (%d %d %d %d) in %@, and the radius is %d.", bounds.x, bounds.y, bounds.width, bounds.height, colorName(fillColor), radius);
+}
+@end
+//RoundedRectangle
+
 
 void drawShapes(id shapes[], int count){
     for (int i = 0; i < count; i++){
@@ -181,7 +150,8 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         // NSLog(@"Hello, World!");
-        id shapes[4];
+        int shapesCount = 5;
+        id shapes[shapesCount];
         
         ShapeRect rect0 = {0, 0, 10, 30};
         shapes[0] = [Circle new];
@@ -203,7 +173,14 @@ int main(int argc, const char * argv[]) {
         [shapes[3] setFillColor:kRedColor];
         [shapes[3] setBounds: rect3];
         
-        drawShapes(shapes, 4);
+        ShapeRect rect4 = {100, 200, 300, 400};
+        shapes[4] = [RoundedRectangle new];
+        [shapes[4] setRadius:20];
+        [shapes[4] setFillColor:kGreenColor];
+        [shapes[4] setBounds:rect4];
+        
+        
+        drawShapes(shapes, shapesCount);
         
     }
     return 0;
