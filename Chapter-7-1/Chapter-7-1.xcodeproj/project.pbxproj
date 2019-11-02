@@ -38,6 +38,7 @@
 		42AC955D236D149600581C3F /* Snip20191102_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_12.png; sourceTree = "<group>"; };
 		42AC9560236D15EE00581C3F /* CYCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYCTest.h; sourceTree = "<group>"; };
 		42AC9561236D15EE00581C3F /* CYCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYCTest.m; sourceTree = "<group>"; };
+		42AC9563236D1B0900581C3F /* Snip20191102_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_15.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 				42AC954D236D102B00581C3F /* main.m */,
 				42AC9560236D15EE00581C3F /* CYCTest.h */,
 				42AC9561236D15EE00581C3F /* CYCTest.m */,
+				42AC9563236D1B0900581C3F /* Snip20191102_15.png */,
 				42AC9556236D137700581C3F /* Snip20191102_2.png */,
 				42AC9558236D137700581C3F /* Snip20191102_3.png */,
 				42AC9554236D137600581C3F /* Snip20191102_4.png */,
