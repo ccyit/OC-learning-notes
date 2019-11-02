@@ -99,6 +99,30 @@
         NSLog(@"%@", [self tireAtIndex:i]);
     }
 }
+@end
+
+//Slant6
+@interface Slant6 : Engine
+@end
+
+@implementation Slant6
+
+- (NSString *)description{
+    return @"I am a slant-6, VROOOM!";
+}
+
+@end
+
+
+//AllWeatherRadial
+@interface AllWeatherRadial : Tire
+@end
+
+@implementation AllWeatherRadial
+
+- (NSString *)description{
+    return @"I am a tire for rain or shine.";
+}
 
 @end
 
@@ -108,10 +132,10 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         // NSLog(@"Hello, World!");
         Car *car = [Car new];
-        Engine *engine = [Engine new];
+        Engine *engine = [Slant6 new];
         [car setEngine:engine];
         for (int i = 0; i < 4; i++) {
-            Tire *tire = [Tire new];
+            Tire *tire = [AllWeatherRadial new];
             [car setTire:tire atIndex:i];
         }
         [car print];
