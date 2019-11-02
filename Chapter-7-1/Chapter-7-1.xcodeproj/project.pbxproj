@@ -25,6 +25,16 @@
 /* Begin PBXFileReference section */
 		42AC954A236D102B00581C3F /* Chapter-7-1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter-7-1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AC954D236D102B00581C3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42AC9554236D137600581C3F /* Snip20191102_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_4.png; sourceTree = "<group>"; };
+		42AC9555236D137600581C3F /* Snip20191102_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_6.png; sourceTree = "<group>"; };
+		42AC9556236D137700581C3F /* Snip20191102_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_2.png; sourceTree = "<group>"; };
+		42AC9557236D137700581C3F /* Snip20191102_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_5.png; sourceTree = "<group>"; };
+		42AC9558236D137700581C3F /* Snip20191102_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_3.png; sourceTree = "<group>"; };
+		42AC9559236D149500581C3F /* Snip20191102_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_14.png; sourceTree = "<group>"; };
+		42AC955A236D149500581C3F /* Snip20191102_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_8.png; sourceTree = "<group>"; };
+		42AC955B236D149500581C3F /* Snip20191102_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_11.png; sourceTree = "<group>"; };
+		42AC955C236D149600581C3F /* Snip20191102_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_9.png; sourceTree = "<group>"; };
+		42AC955D236D149600581C3F /* Snip20191102_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_12.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,16 @@
 			isa = PBXGroup;
 			children = (
 				42AC954D236D102B00581C3F /* main.m */,
+				42AC9556236D137700581C3F /* Snip20191102_2.png */,
+				42AC9558236D137700581C3F /* Snip20191102_3.png */,
+				42AC9554236D137600581C3F /* Snip20191102_4.png */,
+				42AC9557236D137700581C3F /* Snip20191102_5.png */,
+				42AC9555236D137600581C3F /* Snip20191102_6.png */,
+				42AC955A236D149500581C3F /* Snip20191102_8.png */,
+				42AC955C236D149600581C3F /* Snip20191102_9.png */,
+				42AC955B236D149500581C3F /* Snip20191102_11.png */,
+				42AC955D236D149600581C3F /* Snip20191102_12.png */,
+				42AC9559236D149500581C3F /* Snip20191102_14.png */,
 			);
 			path = "Chapter-7-1";
 			sourceTree = "<group>";
