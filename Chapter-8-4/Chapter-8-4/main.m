@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]) {
         NSString *home = [@"~" stringByExpandingTildeInPath];
         NSMutableArray *files = [NSMutableArray arrayWithCapacity:42];
         for (NSString *fileName in [manager enumeratorAtPath:home]) {
-            if ([[fileName pathExtension] isEqualToString:@"mp4"] || [[fileName pathExtension] isEqualToString:@"flv"]) {
+            if ([[fileName pathExtension] isEqualToString:@"pdf"] || [[fileName pathExtension] isEqualToString:@"mobi"]) {
                 [files addObject:fileName];
             }
         }
