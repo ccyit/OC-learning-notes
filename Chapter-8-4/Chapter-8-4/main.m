@@ -11,7 +11,19 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        // NSLog(@"Hello, World!");
+        
+        NSFileManager *manager = [NSFileManager defaultManager];
+        NSString *home = [@"~" stringByExpandingTildeInPath];
+        NSMutableArray *files = [NSMutableArray arrayWithCapacity:42];
+        for (NSString *fileName in [manager enumeratorAtPath:home]) {
+            if ([[fileName pathExtension] isEqualToString:@"mp4"] || [[fileName pathExtension] isEqualToString:@"flv"]) {
+                [files addObject:fileName];
+            }
+        }
+        for (NSString *fileName in files) {
+            NSLog(@"%@", fileName);
+        }
     }
     return 0;
 }
