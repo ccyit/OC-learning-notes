@@ -7,11 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Car.h"
+#import "Slant6.h"
+#import "AllWeatherRadial.h"
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        // NSLog(@"Hello, World!");
+        Car *car = [Car new];
+        for (int i = 0; i < 4; i++) {
+            Tire *tire = [AllWeatherRadial new];
+            [car setTire:tire atIndex:i];
+        }
+        
+        Engine *engine = [Slant6 new];
+        [car setEngine:engine];
+        
+        [car print];
     }
     return 0;
 }
