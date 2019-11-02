@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42AC954E236D102B00581C3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AC954D236D102B00581C3F /* main.m */; };
+		42AC9562236D15EE00581C3F /* CYCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AC9561236D15EE00581C3F /* CYCTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		42AC955B236D149500581C3F /* Snip20191102_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_11.png; sourceTree = "<group>"; };
 		42AC955C236D149600581C3F /* Snip20191102_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_9.png; sourceTree = "<group>"; };
 		42AC955D236D149600581C3F /* Snip20191102_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20191102_12.png; sourceTree = "<group>"; };
+		42AC9560236D15EE00581C3F /* CYCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYCTest.h; sourceTree = "<group>"; };
+		42AC9561236D15EE00581C3F /* CYCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYCTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				42AC954D236D102B00581C3F /* main.m */,
+				42AC9560236D15EE00581C3F /* CYCTest.h */,
+				42AC9561236D15EE00581C3F /* CYCTest.m */,
 				42AC9556236D137700581C3F /* Snip20191102_2.png */,
 				42AC9558236D137700581C3F /* Snip20191102_3.png */,
 				42AC9554236D137600581C3F /* Snip20191102_4.png */,
@@ -108,8 +113,9 @@
 		42AC9542236D102B00581C3F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CYC;
 				LastUpgradeCheck = 1110;
-				ORGANIZATIONNAME = com.ccyag;
+				ORGANIZATIONNAME = com.ccyag.test;
 				TargetAttributes = {
 					42AC9549236D102B00581C3F = {
 						CreatedOnToolsVersion = 11.1;
@@ -140,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42AC954E236D102B00581C3F /* main.m in Sources */,
+				42AC9562236D15EE00581C3F /* CYCTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
