@@ -11,7 +11,13 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        // NSLog(@"Hello, World!");
+        NSDate *date = [NSDate date];
+        NSLog(@"today is %@", date);
+        NSDate *yesterday = [NSDate dateWithTimeIntervalSinceNow:-(24 * 60 * 60)];
+        NSLog(@"yesterday is %@", yesterday);
+        
+        
     }
     return 0;
 }
